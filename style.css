@@ -30,12 +30,39 @@
     color:#5F0A0A;
 }
 
+#parametre{
+    width:50px;
+    height:50px;
+    margin-left:92%;
+    margin-top:20px;
+}
+
+.description{
+    padding-bottom:20px;
+}
+
 
 
                                                                 /*header*/
+#left{
+    width:60px;
+    height:30px;
+    margin-right:2px;
+    color:#5F0A0A;
+    border-radius:180px;
+}
 
+#right{
+    width:60px;
+    height:30px;
+    margin-left:2px;
+    color: #5F0A0A;
+    border-radius:180px;
+}
 
-
+.fil_actualité{
+    text-align: center;
+}
                                                                 /*body*/
                                     
 footer{
@@ -46,4 +73,81 @@ footer{
     border:none;
     border-radius:30px;
 }
+
+.info{
+    width:30px;
+    height:30px;
+    margin: 0 10px 0px 10px;
+}
+
                                                             /*footer*/
+.popup{
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    transform: translate(-42.5%, -42.5%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 3px solid grey;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%
+}
+
+#ppup.active{
+    transform: translate(-42.5%, -42.5%) scale(1);
+}
+.popup-header{
+    padding: 10x 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.popup-header .titlePopup {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-header .btn-close {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popu-body{
+    padding: 10px 15px;
+}
+
+.btn-close{
+    border-radius : 180px;
+    color : grey;
+
+}
+
+#overlay {
+    position: fixed;
+    opacity:0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+
+    opacity: 1;
+    pointer-events: all;
+}
+
+.titlePopup{
+    padding-left: 35%;
+}
+
+
+
+                                                            /*popup*/
