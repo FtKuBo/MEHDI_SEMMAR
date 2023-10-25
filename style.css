@@ -8,7 +8,14 @@
     text-align:center;
     margin:auto;
     border:none;
-    border-radius:30px;
+
+}
+header{
+    position:fixed;
+    top:0%;
+    right:0%;
+    left:0%;
+    width:100%;
 }
 
 .titre{
@@ -23,17 +30,25 @@
 
 .uplink{
     padding:20px 56px 20px 56px;
-    margin:5px 3px 0px 0px;
+    margin:5px 1px 0px 6px;
+    font-size: 12.5px;
     border:none;
     border-radius:90px;
     background-color: #A8A8A8 ;
     color:#5F0A0A;
 }
 
-#parametre{
+#parametre{   /*bouton paramétre à changer aussi*/
     width:50px;
     height:50px;
     margin-left:92%;
+    margin-top:20px;
+}
+
+#home{  /*bouton home à changer en rouge*/
+    width:35px;
+    height:35px;
+    margin-right:92%;
     margin-top:20px;
 }
 
@@ -44,20 +59,21 @@
 
 
                                                                 /*header*/
-#left{
-    width:60px;
-    height:30px;
-    margin-right:2px;
-    color:#5F0A0A;
-    border-radius:180px;
+
+body{
+    position:relative;
+    top:400px;
 }
 
-#right{
-    width:60px;
-    height:30px;
-    margin-left:2px;
-    color: #5F0A0A;
-    border-radius:180px;
+.swtch{
+    width:400px;
+    height:400px;
+}
+
+.fleche{
+    width:40px;
+    height:40px;
+    margin:10px;
 }
 
 .fil_actualité{
@@ -121,8 +137,9 @@ footer{
 }
 
 .btn-close{
-    border-radius : 180px;
-    color : grey;
+    width:20px;
+    height:20px;
+    margin-right:3px;
 
 }
 
