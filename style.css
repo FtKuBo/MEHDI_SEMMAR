@@ -16,6 +16,8 @@ header{
     right:0%;
     left:0%;
     width:100%;
+
+
 }
 
 .titre{
@@ -41,15 +43,18 @@ header{
 #parametre{   /*bouton paramétre à changer aussi*/
     width:50px;
     height:50px;
-    margin-left:92%;
-    margin-top:20px;
+    top:40px;
+    left:95%;
+    position:fixed;
 }
 
 #home{  /*bouton home à changer en rouge*/
-    width:35px;
-    height:35px;
-    margin-right:92%;
-    margin-top:20px;
+    width:40px;
+    height:40px;
+    top:43px;
+    right:95%;
+    position:fixed;
+
 }
 
 .description{
