@@ -6,17 +6,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../js/acc.js" defer ></script>
     <script src="../js/phone.js" defer ></script>
+    <script src="../js/certif.js" defer ></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CERTIFICATIONS</title>
 </head>
 
 <header>
-    <div class="banniére">
+    <div class="banniére">   <!--change home and parametre button + find a way to put them in the same line-->
         <a href = "../acceuil.html"><img src="../image/home.png" alt="home" id="home"/></a><span id=parbtn><img src="../image/menu.png" alt="3 petits points" id="parametre"/></span><!--paramétre-->
 
-        <div class="prmtr">
-            <!-- à remplir -->
+        <div class="prmtr" id="pmtr">
+            <form method="get" action="">
+                <p>
+                    <input type="search" id="sitesearch" autofocus>
+                    <input type="submit" value="🔎" id="serch">
+                </p>
+            </form>
+            <a href="page/message.html" target="_blank"><h3 class="opt" >MESSAGE ME</h3></a>
         </div>
 
         <h1 class="titre">MEHDI SEMMAR</h1> 
@@ -26,14 +33,14 @@
     
         </div>
     </div>
-    <nav>  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
-        <a href = "ME.html" target="_blank"><input type="button" value="ME" class="uplink"></a>
-        <a href = "EDUCATION_HISTORY.html" target="_blank" ><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
-        <a href = "TECHNICAL_SKILLS.html" target="_blank"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
+    <nav id="navig">  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
+        <a href = "ME.html"><input type="button" value="ME" class="uplink"></a>
+        <a href = "EDUCATION_HISTORY.html"><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
+        <a href = "TECHNICAL_SKILLS.html"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
         <a href = "https://github.com/FtKuBo" target="_blank"><input type="button" value="PROJECTS" class="uplink"></a>
-        <a href = "PROFESSIONAL_EXPERIENCE.html" target="_blank"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
-        <a href = "SOFT_SKILLS.html" target="_blank"><input type="button" value="SOFT SKILLS" class="uplink"></a>
-        <a href = "CERTIFICATIONS.html" target="_blank"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
+        <a href = "PROFESSIONAL_EXPERIENCE.html"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
+        <a href = "SOFT_SKILLS.html"><input type="button" value="SOFT SKILLS" class="uplink"></a>
+        <a href = "CERTIFICATIONS.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
         
     </nav> 
     
@@ -41,7 +48,18 @@
 
 
 <body>
-
+    <table class="certif">
+    <tr>
+        <th>Organization</th>
+        <th>Certification</th>
+        <th>ID</th>
+    </tr>
+    <tr>
+        <td class="inf">HarvardX</td>
+        <td class="inf">CS50AI  Introduction to Artificial Intelligence with Python</td>
+        <td class="inf">...</td>
+    </tr>
+</table>
 </body>
 
 <footer>
@@ -74,11 +92,5 @@
 
 
 </footer>
-
-
-
-
-
-
 
 </html>

@@ -16,8 +16,6 @@ header{
     right:0%;
     left:0%;
     width:100%;
-
-
 }
 
 .titre{
@@ -34,28 +32,16 @@ header{
     margin:5px 1px 20px 55px;
     font-size: 18px;
     border:none;
-    background-color: #5F0A0A ;
     color:#A8A8A8;
+    background-color: #5F0A0A;
 }
-nav{
+
+#navig{
     border-bottom: #A8A8A8 solid 1px;
+    background-color: #5F0A0A;
+
 }
 
-#parametre{   /*bouton paramétre à changer aussi*/
-    width:50px;
-    height:50px;
-    top:40px;
-    left:95%;
-    position:fixed;
-}
-
-#parametre:hover{
-    content:url("image/menu-anim.png");
-    width:40px;
-    height:40px;
-    top:48px;
-    left:95.5%;
-}
 
 #home{  /*bouton home à changer en rouge*/
     width:40px;
@@ -64,6 +50,17 @@ nav{
     right:95%;
     position:fixed;
 
+}
+
+#home:hover{
+    width:42px;
+    height:42px;
+    opacity: 0.9;
+}
+
+#home:active{
+    width: 38px;
+    height: 38px;
 }
 
 .description{
@@ -80,6 +77,27 @@ nav{
 
 
                                                                 /*header*/
+#parametre{   
+    width:50px;
+    height:50px;
+    top:40px;
+    left:95%;
+    position:fixed;
+}
+
+#parametre:hover{
+    content:url("image/menu-anim.png");
+    width:40px;
+    height:40px;
+    top:48px;
+    left:95.5%;
+}
+
+#parametre:active{
+    width:38px;
+    height:38px;
+}
+
 .prmtr{
     position: fixed;
     top: 90px;
@@ -96,8 +114,20 @@ nav{
     max-width: 80%;
     border-radius:10px;
 }
-#pmtrp.active{
+#pmtr.active{
     transform: translate(42.5%, 0%) scale(1);
+    
+}
+#parametre.active{
+    content:url("image/menu-anim.png");
+    width:38px;
+    height:38px;
+    top:48px;
+    left:95.5%;
+}
+#overlay.active-menu {
+    opacity:1;
+    pointer-events: all;
 }
 #sitesearch{}
 
@@ -109,7 +139,7 @@ nav{
 
 body{
     position:relative;
-    top:400px;
+    top:250px;
 }
 
 .swtch{
@@ -123,8 +153,82 @@ body{
     margin:10px;
 }
 
+.fleche:hover{
+    width:42px;
+    height:42px;
+    margin:10px;
+    opacity:0.8;
+}
+
 .fil_actualité{
     text-align: center;
+}
+
+ul{
+    background-color:#A8A8A8;
+    border-radius: 15px;
+    width:50%;
+    margin-left:25%;
+}
+
+.questions,.list-title{
+    color:#A8A8A8;
+    text-align: center;
+}
+
+.answer,.bulllist{
+    color:#5F0A0A;
+    padding:10px;
+    
+
+}
+.date{
+    text-align: center;
+    color:#A8A8A8;
+    font-style:italic;
+}
+
+tr{
+    background-color:#A8A8A8;
+    
+}
+th{
+    color:#5F0A0A;
+    padding:40px 50px 40px 50px;
+    font-size: 30px;
+}
+.inf{
+    color:#5F0A0A;
+    text-align: center;
+    font-size: 15px;
+    padding:40px 50px 40px 50px;
+}
+
+.tskills{
+    background-color: #A8A8A8;
+    color:#5F0A0A;
+    margin-left:2.5%;
+}
+.sskills{
+    background-color: #A8A8A8;
+    color:#5F0A0A;
+    margin-left:10%;
+}
+
+.txt{
+    font-style:italic;
+    font-size:25px;
+}
+
+table{
+    text-align: center;
+}
+
+.certif{
+    margin-left:21%;
+}
+.edu{
+    margin-left:15%
 }
                                                                 /*body*/
                                     
@@ -144,7 +248,7 @@ footer{
 }
 
 .info:hover{
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .info:active{
     width:27px;
@@ -157,6 +261,7 @@ footer{
     top: 45%;
     left: 45%;
     transform: translate(-42.5%, -42.5%) scale(0);
+    transition:0.5s;
     transition: 200ms ease-in-out;
     border: 3px solid grey;
     border-radius: 10px;
@@ -168,6 +273,7 @@ footer{
 
 #ppup.active{
     transform: translate(-42.5%, -42.5%) scale(1);
+    transition:0.5s;
 }
 .popup-header{
     padding: 10x 15px;
@@ -208,10 +314,10 @@ footer{
     bottom: 0;
     background-color: rgba(0,0,0,.5);
     pointer-events: none;
+    z-index: 1;
 }
 
 #overlay.active {
-
     opacity: 1;
     pointer-events: all;
 }

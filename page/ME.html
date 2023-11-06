@@ -6,17 +6,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="../js/acc.js" defer ></script>
     <script src="../js/phone.js" defer ></script>
+    <script src="../js/me.js" defer ></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CERTIFICATIONS</title>
+    <title>ME</title>
 </head>
 
 <header>
-    <div class="banniére">
+    <div class="banniére">   <!--change home and parametre button + find a way to put them in the same line-->
         <a href = "../acceuil.html"><img src="../image/home.png" alt="home" id="home"/></a><span id=parbtn><img src="../image/menu.png" alt="3 petits points" id="parametre"/></span><!--paramétre-->
 
-        <div class="prmtr">
-            <!-- à remplir -->
+        <div class="prmtr" id="pmtr">
+            <form method="get" action="">
+                <p>
+                    <input type="search" id="sitesearch" autofocus>
+                    <input type="submit" value="🔎" id="serch">
+                </p>
+            </form>
+            <a href="page/message.html" target="_blank"><h3 class="opt" >MESSAGE ME</h3></a>
         </div>
 
         <h1 class="titre">MEHDI SEMMAR</h1> 
@@ -26,14 +33,14 @@
     
         </div>
     </div>
-    <nav>  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
-        <a href = "ME.html" target="_blank"><input type="button" value="ME" class="uplink"></a>
-        <a href = "EDUCATION_HISTORY.html" target="_blank" ><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
-        <a href = "TECHNICAL_SKILLS.html" target="_blank"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
+    <nav id="navig">  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
+        <a href = "ME.html"><input type="button" value="ME" class="uplink"></a>
+        <a href = "EDUCATION_HISTORY.html"><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
+        <a href = "TECHNICAL_SKILLS.html"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
         <a href = "https://github.com/FtKuBo" target="_blank"><input type="button" value="PROJECTS" class="uplink"></a>
-        <a href = "PROFESSIONAL_EXPERIENCE.html" target="_blank"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
-        <a href = "SOFT_SKILLS.html" target="_blank"><input type="button" value="SOFT SKILLS" class="uplink"></a>
-        <a href = "CERTIFICATIONS.html" target="_blank"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
+        <a href = "PROFESSIONAL_EXPERIENCE.html"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
+        <a href = "SOFT_SKILLS.html"><input type="button" value="SOFT SKILLS" class="uplink"></a>
+        <a href = "CERTIFICATIONS.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
         
     </nav> 
     
@@ -41,7 +48,37 @@
 
 
 <body>
+    <ol>
+            <h1 class="questions">Who am I?</h1>
+            <ul>
+                <li class="answer">I am a Moroccan-Canadian student.</li>
+                <li class="answer">I love soccer, volleyball, and hiking.</li>
+                <li class="answer">I have a fondness for reading books.</li>
+                <li class="answer">I thrive in group settings and enjoy teamwork dynamics.</li>
+                <li class="answer">I have profound love for problem-solving, especially in the context of mathematics.</li>
+            </ul>
 
+            <h1 class="questions">Why do I love computers?</h1>
+            <ul>
+                <li class="answer">
+                    I love computers because I've always been curious about how we use these complex machines in our daily lives, and it intrigued me to understand more about them. 
+                    This curiosity led me to watch videos, attend conferences, take online classes, and learn the basics of computers and coding. I've continued to pursue this interest, and now I'm studying it at the university, which I am super happy about.
+                </li>
+            </ul>
+
+            <h1 class="questions">What makes me the ideal candidate?</h1>
+            <ul>
+                <li class="answer">My project-experiences showcases my ability to manage projects, work collaboratively, and bring innovative ideas to life.</li>
+                <li class="answer">This, along with my passion for problem-solving and my dedication to achieving successful outcomes, makes me an ideal candidate for a role within your organization.</li>
+            </ul>
+
+            <h1 class="questions">What are my objectives?</h1>
+            <ul>
+                <li class="answer">My objectives include expanding my knowledge in data engineering and machine learning.</li>
+                <li class="answer">These objectives stem from my unwavering passion and fascination for statistics and automation.</li>
+            </ul>
+
+    </ol>
 </body>
 
 <footer>
@@ -74,11 +111,5 @@
 
 
 </footer>
-
-
-
-
-
-
 
 </html>

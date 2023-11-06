@@ -1,5 +1,3 @@
-console.log("helloworld")
-
 const openPppup = document.querySelectorAll('[popup-open]');
 const closePppup = document.querySelectorAll('[data-dismiss-popup]');
 const overlay = document.getElementById('overlay');
