@@ -7,6 +7,7 @@
     <script src="../js/acc.js" defer ></script>
     <script src="../js/phone.js" defer ></script>
     <script src="../js/pro.js" defer ></script>
+    <script src="../js/menu.js" defer ></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROFESSIONAL EXPERIENCE</title>
@@ -16,14 +17,25 @@
     <div class="banniére">   <!--change home and parametre button + find a way to put them in the same line-->
         <a href = "../acceuil.html"><img src="../image/home.png" alt="home" id="home"/></a><span id=parbtn><img src="../image/menu.png" alt="3 petits points" id="parametre"/></span><!--paramétre-->
 
-        <div class="prmtr" id="pmtr">
+        <div class="pmtr" id="pmtr">
+            <div class="prmtrcontent">
             <form method="get" action="">
-                <p>
-                    <input type="search" id="sitesearch" autofocus>
-                    <input type="submit" value="🔎" id="serch">
+                <p class="active">
+                    <input type="search" id="sitesearch" class="active" placeholder="Search..." onkeyup="search_opt()" autocomplete="off">
+                    <input type="submit" value="🔎" id="search" class="active">
+                    <ol class="active">
+                        <li class="proposition">ME<img src="../image/hacker.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">EDUCATION HISTORY<img src="../image/graduation-cap.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">TECHNICAL SKILLS<img src="../image/creative-thinking.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">PROJECTS<img src="../image/project.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">PRO-EXPERIENCE<img src="../image/suitcase.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">SOFT SKILLS<img src="../image/promotion.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">CERTIFICATIONS<img src="../image/certificate.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">CONTACT ME<img src="../image/github.png" alt="icone de github" class="desc"/></li>
+                    </ol>
                 </p>
             </form>
-            <a href="page/message.html" target="_blank"><h3 class="opt" >MESSAGE ME</h3></a>
+            </div>
         </div>
 
         <h1 class="titre">MEHDI SEMMAR</h1> 
@@ -32,48 +44,54 @@
         
     
         </div>
+        <nav id="navig">  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
+            <a href = "ME.html"><input type="button" value="ME" class="uplink"></a>
+            <a href = "EDUCATION_HISTORY.html"><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
+            <a href = "TECHNICAL_SKILLS.html"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
+            <a href = "https://github.com/FtKuBo" target="_blank"><input type="button" value="PROJECTS" class="uplink"></a>
+            <a href = "PROFESSIONAL_EXPERIENCE.html"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
+            <a href = "SOFT_SKILLS.html"><input type="button" value="SOFT SKILLS" class="uplink"></a>
+            <a href = "CERTIFICATIONS.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
+            
+        </nav> 
     </div>
-    <nav id="navig">  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
-        <a href = "ME.html"><input type="button" value="ME" class="uplink"></a>
-        <a href = "EDUCATION_HISTORY.html"><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
-        <a href = "TECHNICAL_SKILLS.html"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
-        <a href = "https://github.com/FtKuBo" target="_blank"><input type="button" value="PROJECTS" class="uplink"></a>
-        <a href = "PROFESSIONAL_EXPERIENCE.html"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
-        <a href = "SOFT_SKILLS.html"><input type="button" value="SOFT SKILLS" class="uplink"></a>
-        <a href = "CERTIFICATIONS.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
-        
-    </nav> 
     
 </header>
 
 
-<body>
+<body class="long">
 <ol>
     <h2 class="list-title">Volunteering-UOttawa-Ecole des grands-French and math mentor</h2>
     <h3 class="date">10/2023-12/2023</h3>
     <ul>
-        <li class="bulllist"> Être en bonne santé</li>
-        <li class="bulllist"> Se sentir bien dans sa peau</li>
-        <li class="bulllist"> Recevoir un max de shot d'endorphine</li>
-        <li class="bulllist"> Dépasser ses limites</li>
+        <li class="bulllist"> Prepared sample math problems to assess student abilities and areas needing improvement.</li>
+        <li class="bulllist"> Coordinated with teachers, students and parents to maintain tutoring plans for changing student
+            needs.</li>
+        <li class="bulllist"> Boosted student self-confidence in approaching mathematics problems by uncovering and
+            addressing root cause issues.</li>
+        <li class="bulllist"> Identified needs of learners, adapting course content and delivery style to meet individual needs.</li>
 
     </ul>
     <h2 class="list-title">Volunteering-High school association-Al Sourour-event manager</h2>
     <h3 class="date">07/2023-09/2023</h3>
     <ul>
-        <li class="bulllist"> Être en bonne santé</li>
-        <li class="bulllist"> Se sentir bien dans sa peau</li>
-        <li class="bulllist"> Recevoir un max de shot d'endorphine</li>
-        <li class="bulllist"> Dépasser ses limites</li>
+        <li class="bulllist"> Used my organizational skills to manage a beach cleaning event that gathered more than 50
+            people.</li>
+        <li class="bulllist"> Reviewed activities regularly to identify opportunities for improvement.
+        </li>
+        <li class="bulllist"> Participated in food and clothing distribution to people in need during the holidays.</li>
+        <li class="bulllist"> Participated in promoting this association to more than 500 people.</li>
 
     </ul>
     <h2 class="list-title">Internship-Veolia Redal-Maroc, Rabat</h2>
     <h3 class="date">06/2021-07/2021</h3>
     <ul>
-        <li class="bulllist"> Être en bonne santé</li>
-        <li class="bulllist"> Se sentir bien dans sa peau</li>
-        <li class="bulllist"> Recevoir un max de shot d'endorphine</li>
-        <li class="bulllist"> Dépasser ses limites</li>
+        <li class="bulllist"> Assisting meter readers in the field during the collection of water consumption data. 
+            Learning to use meter reading tools and interacting with customers to access meters.</li>
+        <li class="bulllist"> Helping resolve issues related to meter readings, such as hard-to-reach meters or faulty meters.</li>
+        <li class="bulllist"> Assisting engineers in planning and overseeing water and sanitation-related projects. Aiding in the preparation of technical reports anc project tracking documents. 
+        </li>
+        <li class="bulllist"> Contributing to resource coordination and field team logistics.</li>
 
     </ul>
 </ol>

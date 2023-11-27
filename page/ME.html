@@ -7,6 +7,7 @@
     <script src="../js/acc.js" defer ></script>
     <script src="../js/phone.js" defer ></script>
     <script src="../js/me.js" defer ></script>
+    <script src="../js/menu.js" defer ></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ME</title>
@@ -16,38 +17,51 @@
     <div class="banniére">   <!--change home and parametre button + find a way to put them in the same line-->
         <a href = "../acceuil.html"><img src="../image/home.png" alt="home" id="home"/></a><span id=parbtn><img src="../image/menu.png" alt="3 petits points" id="parametre"/></span><!--paramétre-->
 
-        <div class="prmtr" id="pmtr">
+        <div class="pmtr" id="pmtr">
+            <div class="prmtrcontent">
             <form method="get" action="">
-                <p>
-                    <input type="search" id="sitesearch" autofocus>
-                    <input type="submit" value="🔎" id="serch">
+                <p class="active">
+                    <input type="search" id="sitesearch" class="active" placeholder="Search..." onkeyup="search_opt()" autocomplete="off">
+                    <input type="submit" value="🔎" id="search" class="active">
+                    <ol class="active">
+                        <li class="proposition">ME<img src="../image/hacker.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">EDUCATION HISTORY<img src="../image/graduation-cap.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">TECHNICAL SKILLS<img src="../image/creative-thinking.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">PROJECTS<img src="../image/project.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">PRO-EXPERIENCE<img src="../image/suitcase.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">SOFT SKILLS<img src="../image/promotion.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">CERTIFICATIONS<img src="../image/certificate.png" alt="icone de github" class="desc"/></li>
+                        <li class="proposition">CONTACT ME<img src="../image/github.png" alt="icone de github" class="desc"/></li>
+                    </ol>
                 </p>
             </form>
-            <a href="page/message.html" target="_blank"><h3 class="opt" >MESSAGE ME</h3></a>
+            </div>
         </div>
 
         <h1 class="titre">MEHDI SEMMAR</h1> 
         <h2 class="description">Software engineer, aspiring data engineer and computer/problem solving lover 🤍! </h2>
         <div class="paramétre">
         
+        </div>
+        <nav id="navig">  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
+            <a href = "ME.html"><input type="button" value="ME" class="uplink"></a>
+            <a href = "EDUCATION_HISTORY.html"><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
+            <a href = "TECHNICAL_SKILLS.html"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
+            <a href = "https://github.com/FtKuBo" target="_blank"><input type="button" value="PROJECTS" class="uplink"></a>
+            <a href = "MESSAGE.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
+            <a href = "PROFESSIONAL_EXPERIENCE.html"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
+            <a href = "SOFT_SKILLS.html"><input type="button" value="SOFT SKILLS" class="uplink"></a>
+            <a href = "CERTIFICATIONS.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
+            
+        </nav> 
     
         </div>
-    </div>
-    <nav id="navig">  <!-- La navigation sur le siteweb rajouter des icones qui se ressemblent comme airbnb-->
-        <a href = "ME.html"><input type="button" value="ME" class="uplink"></a>
-        <a href = "EDUCATION_HISTORY.html"><input type="button" value="EDUCATION HISTORY" class="uplink"></a>
-        <a href = "TECHNICAL_SKILLS.html"><input type="button" value="TECHNICAL SKILLS" class="uplink"></a>
-        <a href = "https://github.com/FtKuBo" target="_blank"><input type="button" value="PROJECTS" class="uplink"></a>
-        <a href = "PROFESSIONAL_EXPERIENCE.html"><input type="button" value="PROFESSIONAL EXPERIENCE" class="uplink"></a>
-        <a href = "SOFT_SKILLS.html"><input type="button" value="SOFT SKILLS" class="uplink"></a>
-        <a href = "CERTIFICATIONS.html"><input type="button" value="CERTIFICATIONS" class="uplink"></a>
-        
-    </nav> 
+    
     
 </header>
 
 
-<body>
+<body class="long">
     <ol>
             <h1 class="questions">Who am I?</h1>
             <ul>
