@@ -8,6 +8,9 @@ for(let elt of pgs){
     }
 }
 
-onscroll= () => {
-    console.log("hyy");
-}
+//better the user's experience blocks the animation from covering the navbar when scrolling during the firt second
+const body = document.querySelector("body");
+body.style.overflow = "hidden";
+window.onload = function() {
+    setTimeout(function(){body.style.overflow="auto"}, 1000);
+  };

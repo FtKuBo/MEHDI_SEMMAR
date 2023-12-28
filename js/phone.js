@@ -2,12 +2,12 @@ const openPppup = document.querySelectorAll('[popup-open]');
 const closePppup = document.querySelectorAll('[data-dismiss-popup]');
 const overlay = document.getElementById('overlay');
 
-
+//when the overlay so outside of the box is clicked we close the box 
 overlay.addEventListener('click', () =>{
     const popup=document.getElementById('ppup');
     closePopup(popup);
 })
-
+//simple popup system with a close and open function linked with the red cross and the phone logo
 openPppup.forEach(button => {
     button.addEventListener('click', () => {
         const popup=document.getElementById('ppup');
