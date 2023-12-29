@@ -8,7 +8,6 @@ const txt = document.getElementsByClassName('txt');
 const barrNav = document.getElementById('navig')
 const txtNav = document.getElementsByClassName('uplink');
 let count = 0;
-
 // Function to make the element visible after a delay
 function makeVisible() {
   for(let tt of txt){tt.style.visibility = "visible";}
@@ -24,18 +23,19 @@ window.onload = function() {
 
 // when scrolling the image is getting stuck to tha footer
 window.addEventListener('scroll', function() {
-    var headerHeight = document.querySelector('#navig').offsetHeight;
+    var headerHeight = barrNav.offsetHeight;
     var sliderImages = document.querySelectorAll('.slider img');
     var fd = document.getElementById('fleche-d');
     var fg = document.getElementById('fleche-g');
 
     for(let image of items){
+        console.log(document.querySelector("header").style.zIndex);
         var scrollTop = document.documentElement.scrollTop;
-        console.log(scrollTop);
-        if (scrollTop >= headerHeight) { // making sure that the arrows are getting separated to not be covered by the image
+        if(window.innerWidth >= 1200){
+            if (scrollTop >= headerHeight) { // making sure that the arrows are getting separated to not be covered by the image
             image.style.top = headerHeight + 'px';//as it sticks to the footer
             for (let tt of txt){tt.style.transform = "translateY(-350%)";}
-            barrNav.style.borderBottom = "none";
+            barrNav.style.borderBottom = "hidden";
             for(let txt of txtNav){            
                 txt.style.color = "#5F0A0A";}
            fd.style.transform = "translateX(800%)";
@@ -66,6 +66,7 @@ window.addEventListener('scroll', function() {
             }
         }
     };
+    }
 });// it makes a little description showing up when an image is hovered
 items[count].onmouseover = function(){txt[count].style.opacity="1";}
 txt[count].onmouseover = function(){txt[count].style.opacity="1"; items[count].style.opacity="0.75"}

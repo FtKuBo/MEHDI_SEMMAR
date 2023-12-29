@@ -36,7 +36,7 @@ header{
 }
 
 .uplink{
-    margin:25px 1px 20px 55px;
+    margin:25px 25px 20px 25px;
     pointer-events: cursor;
     font-size: 18px;
     border:none;
@@ -54,6 +54,8 @@ header{
     border-bottom: #A8A8A8 solid 1px;
     background-color: #5F0A0A;
     transition : all 1s;
+    display: block;
+    z-index: 2;
 
 }
 
@@ -153,13 +155,13 @@ header{
     top: 90px;
     right:0%;
     left: 70%;
-    transform: translate(42.5%, 0%) scale(0);
+    transform: translate(55%, 0%) scale(0);
     transition:0.5s;
     transition: 200ms ease-in-out;
     border: 0.5px solid grey;
     box-shadow: 0px 0px 2.5px 2.5px grey;
-    z-index: 10;
     background-color: #A8A8A8;
+    z-index: 10;
     width: 300px;
     height:42%;
     max-width: 80%;
@@ -217,6 +219,8 @@ body{
     flex-direction: column;
     display:flex;
     margin:0;
+    z-index: 1;
+    
 }
 .short{
     position:relative;
@@ -277,7 +281,7 @@ body{
 }
 
 .long{
-    min-height: 95vh;
+    min-height: 110vh;
 }
 
 .fleche{
@@ -311,8 +315,8 @@ ul{
     background-color:#A8A8A8;
     animation: toright 1s ease-in-out;
     border-radius: 15px;
+    margin-left: 25%;
     width:50%;
-    margin-left:25%;
 }
 
 .questions,.list-title{
@@ -414,7 +418,7 @@ footer{
     position: fixed;
     top: 45%;
     left: 45%;
-    transform: translate(-30%, -42.5%) scale(0);
+    transform: translate(-35%, -42.5%) scale(0);
     transition:0.5s;
     transition: 200ms ease-in-out;
     border: 3px solid grey;
@@ -427,7 +431,7 @@ footer{
 }
 
 #ppup.active{
-    transform: translate(-30%, -42.5%) scale(1);
+    transform: translate(-42.5%, -42.5%) scale(1);
     transition:0.5s;
 }
 .popup-header{
@@ -571,3 +575,282 @@ footer{
 
 
                                                                 /*Key frames*/
+@media (max-width : 1400px ){
+    .uplink{margin:25px 20px 30px 20px;}
+
+    #pmtr.active{transform: translate(35%, 0%) scale(1);}
+}
+@media (max-width : 1300px ){
+    .uplink{margin:20px 10px 30px 10px;}
+
+    #pmtr.active{transform: translate(20%, 0%) scale(1);}
+}
+
+@media (max-width : 1200px ){
+    #navig{display: none;}
+
+    header{
+        z-index:2;
+        box-shadow: 0px 0px 2.5px 2.5px grey;
+    }
+    #pmtr.active{transform: translate(0%, 0%) scale(1);}
+
+    .pmtr{height:40%;}
+}
+@media (max-width : 950px ){
+
+    .description{
+        font-size: 15px;
+    }
+    #parametre{
+        left:90%;
+    }
+    #parametre.active1{
+        left:90.5%
+    }
+    #parametre:hover{
+        left:90.5%;
+    }
+    #home{
+        right:90%;
+    }
+    #pmtr.active{
+        transform: translate(-20%, 0%) scale(1);
+    }
+    
+}
+
+@media (max-width : 880px){
+    #pmtr.active{transform: translate(-30%, 0%) scale(1);}
+
+    .certif, .edu, .sskills, .tskills{
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:0%;
+    }
+    .questions, .list-title{font-size: 30px;}
+
+    th{
+        padding:20px 25px 20px 25px;
+        font-size: 25px;
+    }
+    .inf{
+        font-size: 20px;
+        padding:20px 25px 20px 25px;
+    }
+    
+    .skillSet{font-size:20px;}
+
+}
+
+@media(max-width : 650px){
+    #pmtr.active{transform: translate(-45%, 0%) scale(1);}
+
+    .description{visibility: hidden;}
+
+    #parametre{top:7px;}
+
+    #parametre:hover{top:15px;}
+
+    #parametre.active1{top:15px;}
+
+    #home{top:10px;}
+
+    .slider img{
+        width:35rem;
+        height:25rem;
+    }
+} 
+@media (max-width:550px ) {
+
+    #pmtr.active{transform: translate(-60%, -10%) scale(1);}
+
+    .questions, .list-title{
+        font-size: 20px;
+        margin: 20px 0px 5px 0px;
+    }
+    th{
+        padding:10px 12.5px 10px 12.5px;
+        font-size: 15px;
+    }
+    .inf{
+        padding:10px 12.5px 10px 12.5px;
+        font-size: 12.5px;
+    }
+    
+    .skillSet{font-size:12.5px;}
+
+    .titre{font-size:30px ;}
+
+    #parametre{left:85%;}
+
+    #parametre.active1{left:85.5%}
+
+    #parametre:hover{left:85.5%;}
+
+    #home{right:85%;}
+}
+
+@media (max-width:400px){
+    #parametre{   
+        width:30px;
+        height:30px;
+    }
+    
+    #parametre:hover{
+        width:25px;
+        height:25px;
+    }
+    #parametre.active1{
+        width:25px;
+        height:25px;
+    }
+    #home{
+        width:30px;
+        height:30px;}
+
+    .titre{font-size:25px ;}
+
+    #pmtr.active{transform: translate(-70%, -10%) scale(1);}
+
+    .slider img{
+        width:25rem;
+    }
+
+    .questions, .list-title{
+        font-size: 16px;
+        margin: 10px 0px 2.5px 0px;
+    }
+    th{
+        padding:7px 9.5px 7px 9.5px;
+        font-size: 12px;
+    }
+    .inf{
+        padding:7px 9.5px 7px 9.5px;
+        font-size: 9.5px;
+    }
+}
+
+@media (max-width:250px){
+
+}
+
+@media(min-width:2500px){
+    .uplink{
+        margin:35px 35px 35px 35px;
+        font-size: 35px;
+    }
+    .titre{
+        font-size:80px;
+    }
+    #ftitle{font-size: 55px;}
+
+    .description{
+        font-size: 45px;
+    }
+    #parametre{   
+        width:70px;
+        height:70px;
+    }
+    
+    #parametre:hover{
+        width:59px;
+        height:59px;
+    }
+    #parametre.active1{
+        width:59px;
+        height:59px;
+    }
+    #home{
+        width:70px;
+        height:70px;}
+    .info{
+        width:50px;
+        height: 50px;
+    }
+    #pmtr.active{
+        transform: translate(45%, 5%) scale(1);
+        width: 500px;
+    }
+    .proposition{
+        width:75%;
+        height:60px;
+        font-size: 25px;
+    }
+    .desc{
+        width:50px;
+        height: 50px;
+    }
+    #sitesearch{
+        width:80%;
+        height: 50px;
+    }
+    #search{
+        width:50px;
+        height: 50px;
+    }
+    
+    .questions, .list-title{
+        font-size: 70px;
+        margin: 40px 0px 15px 0px;
+    }
+    th,.inf{
+        padding:80px 60px 80px 60px;
+        font-size: 70px;
+    }
+    .skillSet{font-size:80px;}
+
+    .bulllist,.answer{font-size: 40px;}
+
+    .date{font-size: 45px;}
+
+    .long{min-height: 130vh;}
+
+    .slider img{
+        width:70rem;
+        height:50rem;
+    }
+
+    .fleche{
+        width:100px;
+        height:100px;
+    ;}
+
+    .popup{
+        width: 500px;
+        height: 300px;
+    }
+    .btn-close{
+        width:40px;
+        height:40px;
+        margin:5px;
+    }
+    .popup-header .titlePopup {
+        font-size: 2rem;
+    }
+    .popup-body p {
+        font-size: 2rem;
+    }
+
+    
+
+
+}
+
+                                                                /* media queries with width */
+
+/* aprés tu attaque la longueur max et min est c'est bon tu peux poster */
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                /* media queries with height */
