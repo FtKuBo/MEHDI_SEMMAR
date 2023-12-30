@@ -162,7 +162,7 @@ header{
     box-shadow: 0px 0px 2.5px 2.5px grey;
     background-color: #A8A8A8;
     z-index: 10;
-    width: 300px;
+    width: 25%;
     height:42%;
     max-width: 80%;
     border-radius:10px;
@@ -176,12 +176,12 @@ header{
 .proposition{
     border:1px solid grey;
     background-color: white;
-    width:75%;
-    height:40px;
+    width:80%;
+    height:20%;
     transition: all 1s;
     animation:fade 0.5s;
     border-radius:100px;
-    margin:5px;
+    margin:10px;
     padding: 0px 0px 3px 0px;
     margin-left:10%;
     cursor:pointer;
@@ -340,8 +340,6 @@ ul{
 
 tr{
     background-color:#A8A8A8;
-    
-    
 }
 td{animation:tabtop 1s;}
 
@@ -492,8 +490,6 @@ footer{
     pointer-events:all;
 }
 
-
-
 .titlePopup{
     padding-left: 35%;
 }
@@ -573,7 +569,6 @@ footer{
 }
 }
 
-
                                                                 /*Key frames*/
 @media (max-width : 1400px ){
     .uplink{margin:25px 20px 30px 20px;}
@@ -586,7 +581,7 @@ footer{
     #pmtr.active{transform: translate(20%, 0%) scale(1);}
 }
 
-@media (max-width : 1200px ){
+@media (max-width : 1199px ){
     #navig{display: none;}
 
     header{
@@ -595,7 +590,10 @@ footer{
     }
     #pmtr.active{transform: translate(0%, 0%) scale(1);}
 
-    .pmtr{height:40%;}
+    .pmtr{
+        width: 300px;
+        height:45%;
+    }
 }
 @media (max-width : 950px ){
 
@@ -658,8 +656,11 @@ footer{
 
     .slider img{
         width:35rem;
-        height:25rem;
+        height:30rem;
     }
+    .txt{
+    margin-left: 25%;
+    transform: translateY(-400%);}
 } 
 @media (max-width:550px ) {
 
@@ -689,50 +690,11 @@ footer{
     #parametre:hover{left:85.5%;}
 
     #home{right:85%;}
-}
-
-@media (max-width:400px){
-    #parametre{   
-        width:30px;
-        height:30px;
-    }
-    
-    #parametre:hover{
-        width:25px;
-        height:25px;
-    }
-    #parametre.active1{
-        width:25px;
-        height:25px;
-    }
-    #home{
-        width:30px;
-        height:30px;}
-
-    .titre{font-size:25px ;}
-
-    #pmtr.active{transform: translate(-70%, -10%) scale(1);}
-
-    .slider img{
-        width:25rem;
-    }
-
-    .questions, .list-title{
-        font-size: 16px;
-        margin: 10px 0px 2.5px 0px;
-    }
-    th{
-        padding:7px 9.5px 7px 9.5px;
-        font-size: 12px;
-    }
-    .inf{
-        padding:7px 9.5px 7px 9.5px;
-        font-size: 9.5px;
-    }
-}
-
-@media (max-width:250px){
-
+    .txt{
+        margin-left: 25%;
+        transform: translateY(-520%);
+        padding:20px 0px 20px 0px;
+        width:150px;}
 }
 
 @media(min-width:2500px){
@@ -839,12 +801,197 @@ footer{
 
                                                                 /* media queries with width */
 
-/* aprés tu attaque la longueur max et min est c'est bon tu peux poster */
+
+@media(max-height:1300px)  and (max-width:1300px){
+    .long{
+        min-height: 150vh;
+        margin-top:5%;
+    }
+    body{min-height: 130vh;}
+    header{z-index:2;}
+    .pmtr{height: 50%;}
+    
+}
+
+
+@media(max-height:1000px ) and (max-width:1000px){
+    body{min-height: 120vh;}
+    .pmtr{height: 60%;}
+    .long{min-height: 200vh;}
+    header{z-index:2;}
+}
+
+@media(max-height:700px){
+    .pmtr{height: 80%;}
+    .long{
+        min-height: 2000px;
+    }
+    ul{
+        width:70%;
+        margin-left:15%;
+    }
+}
+
+@media(max-height:400px){
+    body{min-height: 1000px;
+    margin-top:10%;}
+    .long{
+        margin-top: 10%;
+        min-height: 1800px;
+    }
+    .short{min-height: 600px;
+    margin-top:10%;}
+    .proposition{
+        width:50%;
+        font-size:10px;
+        margin-left: 25%;}
+    .desc{
+        display: none;
+    }
+}
 
 
 
+@media(max-height:1000px ) and (max-width:600px){
+    .long{min-height: 250vh;}
+}
 
 
+@media (max-width:450px){
+    #parametre{   
+        width:30px;
+        height:30px;
+    }
+    
+    #parametre:hover{
+        width:25px;
+        height:25px;
+    }
+    #parametre.active1{
+        width:25px;
+        height:25px;
+    }
+    #home{
+        width:30px;
+        height:30px;}
+
+    .titre{font-size:25px ;}
+
+    #pmtr.active{transform: translate(-70%, -10%) scale(1);}
+
+    .slider img{
+        width:30rem;
+        height: 20rem;
+    }
+
+    .questions, .list-title{
+        font-size: 16px;
+        margin: 10px 0px 2.5px 0px;
+    }
+    th{
+        padding:7px 9.5px 7px 9.5px;
+        font-size: 12px;
+    }
+    .inf{
+        padding:7px 9.5px 7px 9.5px;
+        font-size: 9.5px;
+    }
+    .txt{
+        margin-left: 25%;
+        transform: translateY(-520%);
+        width:100px;
+        font-size: 15px;}
+
+    ul{
+        width:70%;
+        margin-left: 15%;
+    }
+
+    .popup-header .titlePopup {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .long{
+        min-height: 280vh;
+    }
+
+
+
+}
+
+@media (max-width:340px){
+    .titre{
+        font-size: 20px;
+    }
+    .txt{
+        margin-left: 21%;
+        transform: translateY(-360%);
+        width:80px;
+        font-size: 15px;}
+
+    .slider img {
+        width:25rem;
+        height: 13rem;
+    }
+    .fleche{
+        width:30px;
+        height: 30px;
+        margin : 15px
+    }
+
+    .long{
+        min-height: 370vh;
+    }
+    
+}
+
+
+@media (max-width:260px){
+
+    .fleche{
+        width:10px;
+        height: 10px;
+        margin : 15px
+    }
+
+    .txt{
+        padding:10px 0px 10px 0px;
+        width:50px;
+        font-size: 5px;
+        transform: translateY(-700%);
+    }
+
+    #search{
+        margin:20px;
+        height: 20px;
+    }
+
+    #sitesearch{
+        width:100px;
+    }
+
+    .long{
+        min-height: 900vh;
+    }
+
+    .short{
+        margin-top: 20%;
+        min-height: 800vh;
+    }
+
+    .skillSet td{
+        font-size: 8px;
+    }
+
+    .skillSet th,.inf{
+        font-size: 10px;
+        padding:5px 6px 5px 6px;
+    }
+    
+}
+
+                                                                
 
 
 

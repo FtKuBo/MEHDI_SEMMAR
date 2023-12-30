@@ -4,7 +4,7 @@
 This web portfolio is a showcase of my skills in HTML, CSS, and JavaScript.
 (from scratch) 
 
-No use of MEAN packages (certainly in the next versions)
+No use of MEAN framworks (certainly in the next versions)
 
 It's a work in progress that I'll continually modify and enhance as I progress in my learning journey.
 
