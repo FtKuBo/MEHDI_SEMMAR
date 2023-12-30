@@ -168,7 +168,7 @@ header{
     border-radius:10px;
 }
 #pmtr.active{
-    transform: translate(55%, 0%) scale(1);
+    transform: translate(10%, 0%) scale(1);
     transition:0.5s;
     
 }
@@ -809,8 +809,8 @@ footer{
     }
     body{min-height: 130vh;}
     header{z-index:2;}
-    .pmtr{height: 50%;}
-    
+    #pmtr.active{
+        height: 40%;}
 }
 
 
