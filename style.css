@@ -871,8 +871,9 @@ footer{
 
     .titre{font-size:25px ;}
 
-    #pmtr.active{transform: translate(-70%, -10%) scale(1);
-    height: 60%;}
+    #pmtr.active{
+        transform: translate(-70%, -10%) scale(1);
+        height: 80%;}
 
     .slider img{
         width:30rem;
@@ -916,7 +917,7 @@ footer{
 }
 
 @media(max-height:1000px ) and (max-width:600px){
-    .long{min-height: 200vh;}
+    .long{min-height: 250vh;}
 }
 
 
