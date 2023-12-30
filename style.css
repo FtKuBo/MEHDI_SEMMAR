@@ -917,7 +917,11 @@ footer{
 }
 
 @media(max-height:1000px ) and (max-width:600px){
-    .long{min-height: 250vh;}
+    .long{min-height: 200vh;}
+}
+
+@media(max-height:800px ) and (max-width:400px){
+    .long{min-height: 280vh;}
 }
 
 
